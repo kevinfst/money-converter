@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="img/ico.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Money Converter</title>
+</head>
+
+<body>
+  <img src="./img/logo.png" alt="Money Converter Logo" class="logo" />
+
+  <main>
+    <form>
+      <label for="amount">value</label>
+      <input type="text" name="amount" id="amount" placeholder="0" required />
+
+      <label for="currency">currency</label>
+      <select name="currency" id="currency" required>
+        <option value="" disabled selected hidden>Select currency </option>
+        <option value="USD">US Dollar</option>
+        <option value="EUR">Euro</option>
+        <option value="GBP">British Pound</option>
+
+      </select>
+
+      <button type="submit">Convert to R$ (Real)</button>
+    </form>
+
+    <footer>
+      <span id="description">US$ 1 = R$ 4,86</span>
+      <h1 id="result">486,00 Reais</h1>
+    </footer>
+  </main>
+</body>
+
+</html>
